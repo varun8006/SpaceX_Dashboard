@@ -23,7 +23,7 @@ const LaunchDetails = () => {
  };
 
  if (!launch) {
-  return <div className="min-h-screen flex justify-center items-center ">Loading...</div>;
+  return <div className="min-h-screen flex justify-center items-center text-3xl animate-pulse ">  🚀 </div>;
  }
 
  const { mission_name, launch_date_local, flight_number, details, links, launch_year, launch_date_unix } = launch;

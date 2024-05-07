@@ -86,7 +86,11 @@ const Dashboard = () => {
               </div>
             </div>
           ))}
-          {loading && <div className="flex justify-center items-center right-20">Loading...</div>}
+          {loading && (
+            <div className="fixed top-10 left-[620px] bottom-0 flex justify-center items-center text-3xl animate-pulse">
+            🚀 
+            </div>
+          )}
           <div className="end-of-list" style={{ visibility: loading ? "visible" : "hidden" }}></div>
         </div>
         {selectedLaunch && <LaunchDetails launch={selectedLaunch} onClose={() => setSelectedLaunch(null)} />}
