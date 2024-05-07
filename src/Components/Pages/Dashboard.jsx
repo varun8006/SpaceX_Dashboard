@@ -87,7 +87,7 @@ const Dashboard = () => {
             </div>
           ))}
           {loading && (
-            <div className="fixed top-10 left-[620px] bottom-0 flex justify-center items-center text-3xl animate-pulse">
+            <div className="fixed top-10 left-[750px] bottom-0 flex justify-center items-center text-3xl animate-pulse">
             🚀 
             </div>
           )}
